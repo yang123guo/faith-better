@@ -60,3 +60,29 @@ var getSingleton = function(fn){
         return result || (result = fn.apply(this,arguments));
     }
 }
+
+// js自调用 + new 类
+var proxySingletonCreateDiv = (function(){
+    var instance;
+    return function(html){
+        if(!instance){
+            instance = new createDiv(html);
+        }
+        return instance;
+    }
+})();
+
+// 类单例
+class ProxysingletonCreateDiv {
+    constructor(htmlStr) {
+        return ProxysingletonCreateDiv.getInstance(htmlStr);
+    }
+    static getInstance(name) { 
+        // 静态方法就是 function ProxysingletonCreateDiv() {}  
+        // 把函数 ProxysingletonCreateDiv 看成对象挂接的方法 ProxysingletonCreateDiv.getInstance = function ..
+        if(!ProxysingletonCreateDiv.instance) {
+            ProxysingletonCreateDiv.instance = new CreateDiv(name)
+        }
+        return ProxysingletonCreateDiv.instance;
+    }
+}
