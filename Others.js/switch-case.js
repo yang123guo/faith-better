@@ -34,7 +34,7 @@ function test ( num ){
 function test ( num ){
     switch(true){
         case num == '1' || num == '2':
-             alert('1或者2');
+            alert('1或者2');
             break;
         case num != '1' && num != '2':
             alert('不是1或者2');
@@ -46,6 +46,3 @@ function test ( num ){
 
 test('1');
 test('4');
-
-
-   
