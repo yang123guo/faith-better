@@ -65,7 +65,7 @@ class List extends Component {
     status: PropTypes.oneOf(['loading', 'error', 'success', 'empty'])
   }
   
-  render () {
+render () {
     return (
       <div>
         成功页面
