@@ -25,7 +25,6 @@ var markup = [
     '</div></div></div>'
 ].join('');
 
-
 // if 有定时器，那么先清除
 _this.timer && clearInterval(_this.timer);
 
