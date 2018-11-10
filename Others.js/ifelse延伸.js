@@ -14,3 +14,27 @@ if(status == 1){
     jumpTo('FailPage')
 }
 
+switch (status){
+    case 1:
+      sendLog('processing')
+      jumpTo('IndexPage')
+      break
+    case 2:
+    case 3:
+      sendLog('fail')
+      jumpTo('FailPage')
+      break 
+    default:
+      sendLog('other')
+      jumpTo('Index')
+      break 
+}
+
+const actions = {
+  '1': ['processing','IndexPage'],
+  '2': ['fail','FailPage'],
+  '3': ['fail','FailPage'],
+  '4': ['success','SuccessPage'],
+  '5': ['cancel','CancelPage'],
+  'default': ['other','Index'],
+}
