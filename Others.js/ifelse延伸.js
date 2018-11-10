@@ -1,0 +1,1 @@
+// if else 可以换成 switch case
