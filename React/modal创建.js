@@ -59,6 +59,7 @@ export default {
     },
     hide: xxxxx
 };
+
 // 某组件
 import Dialog from 'xxx';
 alert = () => {
