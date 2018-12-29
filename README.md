@@ -9,3 +9,5 @@
 3. 对象 Object
 
 4. 异常 Try catch
+
+5. 设计模式 Pattern
