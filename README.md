@@ -7,3 +7,5 @@
 2. 循环 ForEach
 
 3. 对象 Object
+
+4. 异常 Try catch
